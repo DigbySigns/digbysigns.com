@@ -8,7 +8,7 @@
         <meta name="keywords" content="Digby Signs, custom signs, vehicle wraps, LED signs, illuminated signs, large format printing, dimensional lettering, wayfinding signs, Nova Scotia signage, Digby Nova Scotia, sign company, sign installation, marine graphics, window graphics, wall graphics, A-frame signs, trade show signage, custom cut signage, stickers, magnets" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.digbysigns.com/" />
-        <title>Digby Signs Inc. | Professional Signage in Digby, Nova Scotia</title>
+        <title>Digby Signs Inc. | Custom Signage, Vehicle Wraps & LED Signs in Digby, Nova Scotia</title>
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.digbysigns.com/" />
@@ -54,15 +54,9 @@
             "openingHoursSpecification": [
                 {
                     "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                    "dayOfWeek": ["Tuesday", "Thursday"],
                     "opens": "09:00",
                     "closes": "17:00"
-                },
-                {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Friday",
-                    "opens": "09:00",
-                    "closes": "15:00"
                 }
             ],
             "sameAs": [
@@ -379,7 +373,7 @@
         <p class="mb-2"><strong>Address:</strong><br>184 Victoria Street<br>Digby, Nova Scotia B0V 1A0</p>
 		<p class="mb-2"><strong>Phone:</strong><br>(902) 245-8195<br></p>
         <p class="mb-2"><strong>Email:</strong><br><a href="mailto:info@digbysigns.com">info@digbysigns.com</a></p>
-        <p class="mb-2"><strong>Hours:</strong><br>Monday–Thursday: 9am – 5pm<br>Friday: 9am – 3pm<br>Saturday/Sunday: Closed</p>
+        <p class="mb-2"><strong>Hours:</strong><br>Tuesday &amp; Thursday: 9am – 5pm<br>Available Monday – Friday via email</p>
 
         <!-- Social Icons (optional) --><br>
 		<p class="mb-2"><strong>Socials:</strong></p>
@@ -391,54 +385,53 @@
       <!-- RIGHT SIDE: Contact Form -->
       <div class="col-lg-7">
 
-        <form id="contactForm" data-sb-form-api-token="2e6ef891-645c-4cef-b42a-2ca9379635fe">
+        <form id="contactForm" action="https://formspree.io/f/xljrwlpe" method="POST" class="needs-validation" novalidate>
           <div class="row">
             <div class="col-md-6 mb-3">
 			<label for="firstName">First Name *</label>
-              <input class="form-control" id="firstName" type="text" placeholder="First Name" data-sb-validations="required" />
-              <div class="invalid-feedback" data-sb-feedback="firstName:required">First name is required.</div>
+              <input class="form-control" id="firstName" name="First Name" type="text" placeholder="First Name" required />
+              <div class="invalid-feedback">First name is required.</div>
             </div>
             <div class="col-md-6 mb-3">
 				<label for="lastName">Last Name</label>
-              <input class="form-control" id="lastName" type="text" placeholder="Last name"/>
-              
+              <input class="form-control" id="lastName" name="Last Name" type="text" placeholder="Last name"/>
+
 
             </div>
             <div class="col-md-6 mb-3">
 				<label for="emailAddress">Email *</label>
-              <input class="form-control" id="emailAddress" type="email" placeholder="Email" data-sb-validations="required,email" />
-              
-              <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email is required.</div>
-              <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+              <input class="form-control" id="emailAddress" name="email" type="email" placeholder="Email" required />
+
+              <div class="invalid-feedback">A valid email is required.</div>
             </div>
             <div class="col-md-6 mb-3">
 				<label for="phoneNumber">Phone</label>
-              <input class="form-control" id="phoneNumber" type="tel" placeholder="Phone" />
-              
+              <input class="form-control" id="phoneNumber" name="Phone" type="tel" placeholder="Phone" />
+
             </div>
           </div>
 			<div class="mb-3">
 				<label for="company">Company</label>
-            <input class="form-control" id="company" type="text" placeholder="Company" />
-            
+            <input class="form-control" id="company" name="Company" type="text" placeholder="Company" />
+
           </div>
 
           <div class="mb-3">
 			  <label for="message">Project Details *</label>
-            <textarea class="form-control" id="message" type="text" placeholder="Please provide as much information as possible about your project or idea." style="height: 10rem;" data-sb-validations="required"></textarea>
-            
-            <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+            <textarea class="form-control" id="message" name="Project Details" placeholder="Please provide as much information as possible about your project or idea." style="height: 10rem;" required></textarea>
+
+            <div class="invalid-feedback">Message is required.</div>
           </div>
-			
+
           <div class="row">
             <div class="col-md-6 mb-3">
 				<label for="design">Do you need design service?</label>
-              <input class="form-control" id="design" type="text" placeholder="Yes/No" />
-              
+              <input class="form-control" id="design" name="Design Service Needed" type="text" placeholder="Yes/No" />
+
             </div>
             <div class="col-md-6 mb-3">
 			<label for="category">Category</label>
-              <select class="form-select" id="category" aria-label="Category">
+              <select class="form-select" id="category" name="Category" aria-label="Category">
                 <option selected disabled hidden value="">Select category</option>
                 <option>LED & Illuminated Signs</option>
                 <option>Vehicle & Marine Graphics</option>
@@ -457,26 +450,30 @@
           <!-- <div class="row">
             <div class="col-md-6 mb-3">
 				<label for="dimensions">Dimensions</label>
-              <input class="form-control" id="dimensions" type="text" placeholder="Example: 10' x 10'" /> 
-              
+              <input class="form-control" id="dimensions" name="Dimensions" type="text" placeholder="Example: 10' x 10'" />
+
             </div>
             <div class="col-md-6 mb-3">
 				<label for="design">Quantity</label>
-              <input class="form-control" id="quantity" type="text" placeholder="Quantity" />
-              
+              <input class="form-control" id="quantity" name="Quantity" type="text" placeholder="Quantity" />
+
             </div>
           </div>
 -->
+          <!-- Formspree: subject line of the notification email -->
+          <input type="hidden" name="_subject" value="New website enquiry — Digby Signs" />
+          <!-- Formspree honeypot: hidden from people, catches bots -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none !important" aria-hidden="true" />
+
           <!-- Success/Fail Messages -->
           <div class="d-none" id="submitSuccessMessage">
             <div class="text-center mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
-              <p></p>
-              <a href="https://startbootstrap.com/solution/contact-forms" target="_blank"></a>
+              <div class="fw-bolder">Thanks — your message has been sent!</div>
+              <p>We'll get back to you as soon as we can.</p>
             </div>
           </div>
           <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">Error sending message!</div>
+            <div class="text-center text-danger mb-3">Error sending message! Please try again, or email us directly at <a href="mailto:info@digbysigns.com">info@digbysigns.com</a>.</div>
           </div>
 
           <div class="d-grid mt-4">
@@ -492,8 +489,51 @@
 
 </section>
 
-<!-- REQUIRED: SB Forms JavaScript -->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<!-- Formspree submission handler (keeps the visitor on the page) -->
+<script>
+  (function () {
+    var form = document.getElementById("contactForm");
+    if (!form) return;
+
+    var button = document.getElementById("submitButton");
+    var successMessage = document.getElementById("submitSuccessMessage");
+    var errorMessage = document.getElementById("submitErrorMessage");
+    var buttonText = button.innerHTML;
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      // Bootstrap validation styling on the required fields
+      form.classList.add("was-validated");
+      if (!form.checkValidity()) return;
+
+      successMessage.classList.add("d-none");
+      errorMessage.classList.add("d-none");
+      button.disabled = true;
+      button.innerHTML = "Sending...";
+
+      fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" }
+      })
+        .then(function (response) {
+          if (!response.ok) throw new Error("Submission failed");
+          form.reset();
+          form.classList.remove("was-validated");
+          successMessage.classList.remove("d-none");
+        })
+        .catch(function () {
+          errorMessage.classList.remove("d-none");
+        })
+        .then(function () {
+          button.disabled = false;
+          button.innerHTML = buttonText;
+        });
+    });
+  })();
+</script>
         
 		   
 
@@ -1105,7 +1145,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 		<!-- Get A Qoute -->
 		<script>
   function scrollToContactAfterModal() {
